@@ -17,8 +17,8 @@ public void imgUrl(){
 // Navigate to URL  https://in.bookmyshow.com/explore/home/chennai
 driver.get("https://in.bookmyshow.com/explore/home/chennai");
 
-//Click on the Right arrow in the Recommended Movie Carosol Using Locator "XPath" //h2[text()='Recommended Movies']/../../../following-sibling::div//div[contains(@class,'hxrBcw')]
-driver.findElement(By.xpath("//h2[text()='Recommended Movies']/../../../following-sibling::div//div[contains(@class,'hxrBcw')]")).click();
+//Click on the Right arrow in the Recommended Movie Carosol Using Locator "XPath" (//div[contains(@class,'hxrBcw')])[1]
+driver.findElement(By.xpath("(//div[contains(@class,'hxrBcw')])[1]")).click();
 
 WebDriverWait wait = new WebDriverWait(driver, 30);
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='Recommended Movies']/../../../following-sibling::div/div/div/div[10]"))); 
