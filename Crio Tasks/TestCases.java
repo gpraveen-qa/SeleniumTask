@@ -13,8 +13,8 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class TestCases {
-   static ChromeDriver driver;
-    public TestCases()
+   private static ChromeDriver driver;
+    TestCases()
     {
         System.out.println("Constructor: TestCases");
         WebDriverManager.chromedriver().timeout(10).setup();

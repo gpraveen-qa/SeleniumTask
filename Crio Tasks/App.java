@@ -30,19 +30,19 @@ public class App {
        //iurl.imgUrl();
 
         NestedFrames nf = new NestedFrames();
-        //nf.nFrame();
+        nf.nFrame();
 
         IMDBRatings imdbr = new IMDBRatings();
         //imdbr.imdb();
         
         WindowHandle wh = new WindowHandle();
-       // wh.winHandle();
+        wh.winHandle();
 
        ImageLinkedin imglinked = new ImageLinkedin();
        //imglinked.imagePost();
 
        VideoLinkedin vlinked = new VideoLinkedin();
-       vlinked.videoPost();
+       //vlinked.videoPost();
         //END Tests
 
 
